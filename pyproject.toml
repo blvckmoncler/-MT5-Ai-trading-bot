@@ -1,0 +1,23 @@
+[project]
+name = "bot-portal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "226169057-James", email = "226169057@nust.na" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.142.2",
+    "metatrader5>=5.0.6231",
+    "pandas>=3.0.6",
+    "requests>=2.34.2",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+bot-portal = "bot_portal:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
